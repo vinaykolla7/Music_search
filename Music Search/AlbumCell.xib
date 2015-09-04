@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="101" id="jch-Fr-sDr" customClass="AlbumTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jch-Fr-sDr" id="Pfl-Q4-Tgz">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-QE-Pxa">
+                        <rect key="frame" x="8" y="21" width="60" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4Kz-6E-71z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="998" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" placeholderIntrinsicWidth="171" placeholderIntrinsicHeight="19" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So2-gk-biq">
+                        <rect key="frame" x="76" y="0.0" width="203" height="31"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="kx1-PD-kuU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="754" placeholderIntrinsicWidth="171" placeholderIntrinsicHeight="19" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-ZM-TqN">
+                        <rect key="frame" x="76" y="35" width="203" height="31"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="754" placeholderIntrinsicWidth="171" placeholderIntrinsicHeight="19" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quX-vr-7tU">
+                        <rect key="frame" x="76" y="69" width="203" height="31"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="quX-vr-7tU" firstAttribute="top" secondItem="YJQ-ZM-TqN" secondAttribute="bottom" priority="999" constant="4" id="6Is-KM-ytq"/>
+                    <constraint firstAttribute="bottom" secondItem="quX-vr-7tU" secondAttribute="bottom" id="6tG-54-zu7"/>
+                    <constraint firstItem="quX-vr-7tU" firstAttribute="leading" secondItem="YJQ-ZM-TqN" secondAttribute="leading" id="DxS-ea-WH3"/>
+                    <constraint firstItem="So2-gk-biq" firstAttribute="leading" secondItem="YJQ-ZM-TqN" secondAttribute="leading" id="GgI-k2-p0K"/>
+                    <constraint firstItem="Tsu-QE-Pxa" firstAttribute="top" secondItem="Pfl-Q4-Tgz" secondAttribute="top" constant="21" id="Jda-zF-ANe"/>
+                    <constraint firstItem="YJQ-ZM-TqN" firstAttribute="centerY" secondItem="Tsu-QE-Pxa" secondAttribute="centerY" id="LDG-Nv-cq5"/>
+                    <constraint firstItem="quX-vr-7tU" firstAttribute="trailing" secondItem="YJQ-ZM-TqN" secondAttribute="trailing" id="Rr8-xn-6SK"/>
+                    <constraint firstItem="So2-gk-biq" firstAttribute="trailing" secondItem="YJQ-ZM-TqN" secondAttribute="trailing" id="aFm-1j-dxo"/>
+                    <constraint firstItem="So2-gk-biq" firstAttribute="leading" secondItem="Tsu-QE-Pxa" secondAttribute="trailing" constant="8" id="aH6-ce-zLg"/>
+                    <constraint firstItem="So2-gk-biq" firstAttribute="top" secondItem="Pfl-Q4-Tgz" secondAttribute="top" id="dox-5u-de9"/>
+                    <constraint firstItem="Tsu-QE-Pxa" firstAttribute="leading" secondItem="Pfl-Q4-Tgz" secondAttribute="leading" constant="8" id="hNG-AX-RkZ"/>
+                    <constraint firstAttribute="trailing" secondItem="So2-gk-biq" secondAttribute="trailing" constant="8" id="m8s-lR-yKi"/>
+                    <constraint firstItem="quX-vr-7tU" firstAttribute="height" secondItem="YJQ-ZM-TqN" secondAttribute="height" id="oKi-ul-nI8"/>
+                    <constraint firstAttribute="bottom" secondItem="Tsu-QE-Pxa" secondAttribute="bottom" constant="20" id="sJu-34-k3Q"/>
+                    <constraint firstAttribute="bottom" secondItem="quX-vr-7tU" secondAttribute="bottom" id="sek-EE-qsc"/>
+                    <constraint firstItem="YJQ-ZM-TqN" firstAttribute="top" secondItem="So2-gk-biq" secondAttribute="bottom" priority="999" constant="4" id="yPL-Jv-V4A"/>
+                    <constraint firstItem="So2-gk-biq" firstAttribute="height" secondItem="YJQ-ZM-TqN" secondAttribute="height" id="zlL-IS-0b0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumImage" destination="Tsu-QE-Pxa" id="cec-vY-oEW"/>
+                <outlet property="albumName" destination="YJQ-ZM-TqN" id="3f0-5L-iin"/>
+                <outlet property="artistName" destination="So2-gk-biq" id="3yI-Cf-tnI"/>
+                <outlet property="trackName" destination="quX-vr-7tU" id="6AJ-vu-khZ"/>
+            </connections>
+            <point key="canvasLocation" x="284" y="316.5"/>
+        </tableViewCell>
+    </objects>
+</document>
